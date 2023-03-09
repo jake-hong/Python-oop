@@ -7,6 +7,13 @@
 
 class Gpt:
 
+    """
+    [Gpt 클래스]
+    Author: jake
+    Contents: Gpt class
+    """
+
+    # 클래스 변수
     population = 0
 
     # 생성자 함수
@@ -43,3 +50,22 @@ gpt1.say_hello()
 gpt2.say_bye()
 gpt3.add_calculator(1,3)
 Gpt.how_many()
+
+# name_space
+print(Gpt.__dict__)  # 클래스에 인스턴스 메소드가 있음.
+print(gpt1.__dict__) # 인스턴스는 인스턴스 변수만 있음. 메모리 효율을 위함.
+
+print(gpt1.population) # 인스턴스도 클래스 변수에 접근이 가능하다.
+
+print(Gpt.say_bye(gpt1))
+
+# dir()
+# namespace의 키를 확인할 수 있음.
+# __doc__ 클래스의 주석을 확인할 수 있음.
+# __class__ 어떤 클래스로 만들어지 인스턴스인지 확인 가능.
+
+print(dir(gpt2))
+
+print(dir(Gpt))
+print(Gpt.__doc__)
+print(Gpt.__class__)
