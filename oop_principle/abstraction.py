@@ -41,6 +41,10 @@ class Gpt:
     def how_many(cls):
         print(f"we have {cls.population} gpt")
 
+    @staticmethod
+    def wow_gpt():
+        print('hihi!')
+
 
 gpt1 = Gpt("gpt1", 3214032)
 gpt2 = Gpt("gpt2", 3214032)
@@ -69,3 +73,5 @@ print(dir(gpt2))
 print(dir(Gpt))
 print(Gpt.__doc__)
 print(Gpt.__class__)
+
+print(gpt1.wow_gpt())
